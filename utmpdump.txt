@@ -1,0 +1,19 @@
+Download Kali Linux (x86_64):
+https://old.kali.org/base-images/kali-2024.3/kali-linux-2024.3-installer-amd64.iso
+-----------------------------------------------------------------------------------------------------------------------------------------------
+Install it.
+-----------------------------------------------------------------------------------------------------------------------------------------------
+After installation open terminal and edit /etc/apt/sources.list
+kali@kali:~$ echo "deb http://http.kali.org/kali kali-last-snapshot main contrib non-free non-free-firmware" | sudo tee /etc/apt/sources.list
+-----------------------------------------------------------------------------------------------------------------------------------------------
+Upgrade system:
+kali@kali:~$ sudo apt-get update
+kali@kali:~$ sudo apt-get dist-upgrade
+-----------------------------------------------------------------------------------------------------------------------------------------------
+Reboot Kali Linux, utmpdump should be installed.
+-----------------------------------------------------------------------------------------------------------------------------------------------
+kali@kali:~$ utmpdump -h
+-----------------------------------------------------------------------------------------------------------------------------------------------
+Links:
+https://old.kali.org/base-images/?C=N&O=D
+https://www.kali.org/docs/general-use/kali-linux-sources-list-repositories/
